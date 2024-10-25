@@ -7,7 +7,7 @@ Pre-requisites:
 
 To spin up the services, run
 ```
-docker-compose up -d
+docker-compose up -d --pull always
 ```
 This starts two containers: activemq-classic and the Spring Boot app containing the sample JMS services.
 
