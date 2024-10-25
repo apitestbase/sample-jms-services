@@ -1,0 +1,22 @@
+networks:
+  atb-demo-network:
+    name: atb-demo-network
+
+services:
+  activemq-classic:
+    image: apache/activemq-classic
+    ports:
+      - "61616:61616"
+      - "8161:8161"
+    restart: always
+    networks:
+      - atb-demo-network
+  app:
+    image: apitestbase/sample-jms-services
+    command: ["--spring.activemq.broker-url=tcp://activemq-classic:61616"]
+    depends_on:
+      activemq-classic:
+        condition: service_started
+    restart: always
+    networks:
+      - atb-demo-network
