@@ -25,6 +25,8 @@ jobs:
   Build-and-Push-Docker-Image:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    permissions:
+      contents: write
     steps:
       - name: Show release version
         run: echo ${{ inputs.release_version }}
