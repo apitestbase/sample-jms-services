@@ -55,4 +55,9 @@ jobs:
           logout: true
       - name: Push docker image to Docker Hub
         run: docker push apitestbase/sample-jms-services --all-tags
+      - name: Upload docker-compose.yaml to release, to enable download from readme
+        uses: softprops/action-gh-release@v2.0.8
+        with:
+          tag_name: ${{ inputs.release_version }}
+          files: docker-compose.yaml
 

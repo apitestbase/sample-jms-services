@@ -2,7 +2,7 @@ Sample JMS services for demonstrating [API Test Base](https://apitestbase.io/)'s
 
 Pre-requisites:
 * Install and start Docker Desktop.
-* Download the <a href="https://raw.githubusercontent.com/apitestbase/sample-jms-services/refs/heads/master/docker-compose.yaml" download="docker-compose.yaml">docker-compose.yaml</a> file.
+* Download the [docker-compose.yaml](https://github.com/apitestbase/sample-jms-services/releases/latest/download/docker-compose.yaml) file.
 * Open a command line window, and cd to the directory where the docker-compose.yaml file is located.
 
 To spin up the services, run `docker-compose up -d`. This starts two containers: activemq-classic and the Spring Boot app containing the sample JMS services.
