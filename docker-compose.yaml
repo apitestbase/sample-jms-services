@@ -16,9 +16,6 @@ services:
   app:
     image: apitestbase/sample-jms-services
     command: ["--spring.activemq.broker-url=tcp://activemq-classic:61616"]
-    depends_on:
-      activemq-classic:
-        condition: service_started
     restart: always
     networks:
       - atb-demo-network
