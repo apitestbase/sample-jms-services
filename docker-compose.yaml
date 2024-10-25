@@ -1,3 +1,5 @@
+name: sample-jms-services
+
 networks:
   atb-demo-network:
     name: atb-demo-network
