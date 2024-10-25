@@ -5,10 +5,16 @@ Pre-requisites:
 * Download the [docker-compose.yaml](https://github.com/apitestbase/sample-jms-services/releases/latest/download/docker-compose.yaml) file.
 * Open a command line window, and cd to the directory where the docker-compose.yaml file is located.
 
-To spin up the services, run `docker-compose up -d`. This starts two containers: activemq-classic and the Spring Boot app containing the sample JMS services.
+To spin up the services, run
+```
+docker-compose up -d
+```
+This starts two containers: activemq-classic and the Spring Boot app containing the sample JMS services.
 
-To shut down and remove the services, run `docker-compose down`.
-
+To shut down and remove the services, run
+```
+docker-compose down
+```
 The JMS services
 * Echo service
   * Receive a JMS message from an ActiveMQ input queue, and send a JMS message to an ActiveMQ output queue, with the message body and JMSCorrelationID header copied from the input message.
