@@ -1,4 +1,4 @@
-Sample JMS services for demonstrating [API Test Base](https://apitestbase.io/)'s JMS testing features.
+Sample JMS services for demonstrating API Test Base's [JMS testing features](https://apitestbase.io/docs/en/jms-request).
 
 Pre-requisites:
 * Install and start Docker Desktop.
